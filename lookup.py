@@ -8,4 +8,4 @@ doc_type = "P3-03"
 matches = search.loc[(search['Registration ID'].isin(ref['Registration ID']))
                      & (search["Title"].str.contains(doc_type))]
 
-matches.to_excel("matches.xlsx")
+matches.to_excel(doc_type + "_matches.xlsx")
